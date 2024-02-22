@@ -7,7 +7,7 @@ function estaQuebrado(){
 }
 
 function lampLigada(){
-    if(!estaQuebrada()){
+    if(!estaQuebrado()){
     lampada.src = "img/ligada.jpg"
     }
 }
@@ -17,7 +17,7 @@ function lampQuebrada(){
 }
 
 function lampDesligada(){
-    if(!estaQuebrada()){
+    if(!estaQuebrado()){
     lampada.src = "img/desligada.jpg"
     }
 }
