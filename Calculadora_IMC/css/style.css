@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap')
 
-*{
-    font-family: "Poppins", sans-serif;
+* {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -90,8 +90,8 @@ body {
     padding: 0 0.5rem;
 }
 
-.input-field input:: ::-webkit-outer-spin-button,
-.input-field input:: ::-webkit-inner-spin-button{
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button{
     appearance: none;
 }
 
