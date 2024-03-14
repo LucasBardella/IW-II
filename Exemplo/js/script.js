@@ -8,7 +8,7 @@ function pegaNome(){
     resultado.innerHTML = nome
 
 
-
+    
 }
 
 
