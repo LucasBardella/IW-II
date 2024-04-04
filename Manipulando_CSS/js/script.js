@@ -1,3 +1,11 @@
+let titulo = document.querySelector('h1')
+titulo.textContent = 'Manipulando CSS com JS'
+//titulo.innerHTML = 'Aula Manipular CSS'
+let imagem = document.querySelector('#foto')
+imagem.setAttribute('src', 'img/gray.png')
+imagem.setAttribute('width', '280px')
+
+/* MANIPULAR CSS */
 document.querySelector('h1').style.color = "white";
 titulo.style.color = "white";
 titulo.style.backgroundColor = "black";
@@ -8,20 +16,23 @@ let box = document.querySelectorAll('.box')
 box[0].setAttribute('class', 'escura')
 box[0].removeAttribute('class')
 
+/////// MODOS DE COR ///////
 let tela = document.querySelector('main')
-
 let btnDark = document.querySelector('#btdark')
-
 let btnLight = document.querySelector('#btlight')
-
 let btnpink = document.querySelector('#btpink')
-
 let btnpurple = document.querySelector('#btpurple')
+let btnyellow = document.querySelector('#btyellow')
+let btnred = document.querySelector('#btred')
+let btngreen = document.querySelector('#btgreen')
 
 btnDark.addEventListener('click', modoDark)
 btnLight.addEventListener('click', modoLight)
 btnpink.addEventListener('click', modopink)
 btnpurple.addEventListener('click', modopurple)
+btnyellow.addEventListener('click', modoyellow)
+btnred.addEventListener('click', modored)
+btngreen.addEventListener('click', modogreen)
 
 function modoDark() {
     event.preventDefault();

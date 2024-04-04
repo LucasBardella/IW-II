@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: auto;
     height: auto;
@@ -9,8 +11,8 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: #ffffff;
     margin: auto;
 }
@@ -32,9 +34,10 @@ main {
     background-color: black;
     margin-left: 3%;
     margin-right: 3%;
-    text-shadow: 2px 2px 4px #ededed
+    text-shadow: 2px 2px 4px #ededed;
+    margin-bottom: 2%;
 }
-
+/* botoes */
 button {
     border: 1.5px solid whitesmoke ;
     border-radius: 10px;
@@ -59,6 +62,7 @@ h1, section, article {
     padding-bottom: 2%;
 }
 
+/* botao */
 #btlight {
     background: #ededed;
     color: #121212;
@@ -75,32 +79,38 @@ h1, section, article {
     border: 2px solid #fa3e79 ;
 }
 #btpurple{
-    background-color: #940280;
+    background-color: #f10ae6;
     color: white;
-    border: 2px solid #e604da ;
+    border: 2px solid #960070 ;
 }
 
+/* Estilos para serem usados via JS */
 .light {
     background: #fff;
     color: #191919;
-    text-shadow: 2px 2px 4px #c7bebe
+    text-shadow: 2px 2px 4px #c7bebe;
+    font-size: 1.4em;
 }
 .dark {
     background: #222;
     color: #fff;
-    text-shadow: 2px 2px 4px #ededed
+    text-shadow: 2px 2px 4px #ededed;
+    font-size: 1.4em;
 }
 .pink{
     background-color: #fc6998;
     color: #fa3e79;
-    text-shadow: 2px 2px 4px #ededed
+    text-shadow: 2px 2px 4px #ededed;
+    font-size: 1.4em;
 }
 .purple{
-    background: #940280;
-    color: #e604da;
-    text-shadow: 2px 2px 4px #ededed
+    background: #eb01df;
+    color: #ac0381;
+    text-shadow: 2px 2px 4px #ededed;
+    font-size: 1.4em;
 }
 
+/* articles com a class box */
 .box {
     padding: 0.625rem;
     border-radius: 8px;
