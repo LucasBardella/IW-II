@@ -44,15 +44,31 @@
 						},
 						instagram: {
 							arrobaNoInicio: true
-						}
+						},
+						rg: {
+							required: true,
+							maxlength: 11,
+							minlength: 11,	
+						},
+						tel: {
+							required: true,
+							maxlength: 13,
+							minlength: 13,
+						},
+						cep: {
+							required: false,
+							maxlength: 8,
+							minlength: 8,
+						},
 					},
 					submitHandler: function(form){
-						alert("Sucessoooooooooo")						
+						alert("Obrigado por realizar o formulário")						
 					}
 				})
 			})
 		</script>
 	</head>
+
 	<body>
 		<div class="container">
 			<h1>Validação de formulários com JQuery Validation</h1>
@@ -69,9 +85,9 @@
 					<label>Cidade</label>
 					<select name="cidade" id="cidade" class="form-control">
 						<option value="">----</option>
-						<option value="APARECIDA">Aparecida</option>
-						<option value="GUARATINGUETA">Guaratinguetá</option>
-						<option value="CUNHA">Cunha</option>
+						<option value="APARECIDA">Santo André</option>
+						<option value="GUARATINGUETA">Ribeirão Pires</option>
+						<option value="CUNHA">Mauá</option>
 					</select>
 				</div>
 				<div class="row">
@@ -82,6 +98,18 @@
 					<label>Instagram</label>
 					<input type="text" name="instagram" id="instagram" class="form-control" />
 				</div>
+				<div class="row">
+					<label>RG</label>
+					<input type="text" name="rg" id="rg" class="form-control" />
+				</div>
+				<div class="row">
+					<label>Telefone</label>
+					<input type="text" name="tel" id="tel" class="form-control" />
+				</div>
+				<div class="row">
+					<label>Cep</label>
+					<input type="text" name="cep" id="cep" class="form-control" />
+				</div>	
 				<div class="row">
 					<input type="submit" name="enviar" id="enviar" class="btn btn-primary form-control" />
 				</div>
