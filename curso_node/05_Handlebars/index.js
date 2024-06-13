@@ -1,21 +1,23 @@
 const express = require("express")
 const app = express()
+const handlebars = require('express-handlebars')
 
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/paginas/index.html')
+// Configuração
+
+// Template Engine
+app.engine('handlebars', handlebars.engine({ defaultLayout: 'main' }))
+app.set('view engine', 'handlebars')
+
+//Conexão com Banco de Dados
+const Sequelize = require('sequelize')
+const sequelize = new Sequelize('test', 'root', '', {
+    hsot: 'localhost',
+    dialect: 'mysql'
 })
 
-app.get('/sobre', function (req, res) {
-    res.sendFile(__dirname + '/paginas/sobre.html')
-})
-
-app.get('/blog', function (req, res) {
-    res.send('Página blog')
-})
-
-app.get('/cadastro/:nome/:idade', function (req, res) {
-    res.send('Olá seu nome: ' + req.params.nome + '\nSua idade: ' + req.params.idade)
-
+//Rotas
+app.get('/cadastro', function (req, res) {
+    res.send('ROTA DE CADASTRO DE POST')
 })
 
 
